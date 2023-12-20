@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  nmap:
+    build: ../cli_apps/nmap
+    image: ${REPO_NAME}/nmap:${VERSION}
+
+  awscli:
+    build: ../cli_apps/awscli
+    image: ${REPO_NAME}/awscli:${VERSION}
+
+  tcpdump:
+    build: ../cli_apps/tcpdump
+    image: ${REPO_NAME}/tcpdump:${VERSION}
+
+  netcat:
+    build: ../cli_apps/netcat
+    image: ${REPO_NAME}/netcat:${VERSION}
+
+  traceroute:
+    build: ../cli_apps/traceroute
+    image: ${REPO_NAME}/traceroute:${VERSION}
+  
+  tshark:
+    build: ../cli_apps/tshark
+    image: ${REPO_NAME}/tshark:${VERSION}
